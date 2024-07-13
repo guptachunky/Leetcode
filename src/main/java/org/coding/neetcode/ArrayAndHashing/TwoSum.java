@@ -6,6 +6,7 @@ import java.util.Map;
 public class TwoSum {
     public static void main(String[] args) {
         // https://neetcode.io/problems/two-integer-sum
+        // Easy
         // Appraoch keep moving to array and store values in map with its value and index
         // , and keep searching for difference between target and current values if found return
     }

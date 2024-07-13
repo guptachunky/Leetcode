@@ -5,7 +5,8 @@ import java.util.Set;
 
 public class DuplicateInteger {
     public static void main(String[] args) {
-//        https://neetcode.io/problems/duplicate-integer
+        // https://neetcode.io/problems/duplicate-integer
+        // Easy
     }
 
     public boolean hasDuplicate(int[] nums) {

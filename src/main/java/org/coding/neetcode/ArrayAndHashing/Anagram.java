@@ -3,6 +3,7 @@ package org.coding.neetcode.ArrayAndHashing;
 public class Anagram {
     public static void main(String[] args) {
         //https://neetcode.io/problems/is-anagram
+        // Easy
         // Just keeping a counter of each character inside the Integer array of size 26
     }
 
