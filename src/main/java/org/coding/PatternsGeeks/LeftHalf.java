@@ -1,21 +1,24 @@
 package org.coding.PatternsGeeks;
+
 // Dummy Commit
 //        *    |            1    |            A
 //      * *    |          1 2    |          A B
 //    * * *    |        1 2 3    |        A B C
 //  * * * *    |      1 2 3 4    |      A B C D
 //* * * * *    |    1 2 3 4 5    |    A B C D E
-public class LeftHalf {
+public class LeftHalf implements Patterns {
     public static void main(String[] args) {
         LeftHalf leftHalf = new LeftHalf();
-        leftHalf.printStarts(6);
+        leftHalf.printStars(6);
         System.out.println();
         leftHalf.printNumbers(6);
         System.out.println();
         leftHalf.printAlphabets(6);
     }
 
-    void printStarts(int n) {
+
+    @Override
+    public void printStars(int n) {
         for (int i = n - 1; i > 0; i--) {
             for (int j = 0; j < n; j++) {
                 if (j < i) {
@@ -28,7 +31,8 @@ public class LeftHalf {
         }
     }
 
-    void printNumbers(int n) {
+    @Override
+    public void printNumbers(int n) {
         for (int i = n - 1; i > 0; i--) {
             for (int j = 0; j < n; j++) {
                 if (j < i) {
@@ -41,7 +45,8 @@ public class LeftHalf {
         }
     }
 
-    void printAlphabets(int n) {
+    @Override
+    public void printAlphabets(int n) {
         for (int i = n - 1; i > 0; i--) {
             for (int j = 0; j < n; j++) {
                 if (j < i) {

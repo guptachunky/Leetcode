@@ -5,7 +5,7 @@ package org.coding.PatternsGeeks;
 //* * *       |   1 2 3       |   A B C
 //* * * *     |   1 2 3 4     |   A B C D
 //* * * * *   |   1 2 3 4 5   |   A B C D E
-public class RightHalf {
+public class RightHalf implements Patterns {
     public static void main(String[] args) {
         RightHalf rightHalf = new RightHalf();
         rightHalf.printStars(5);
@@ -21,7 +21,8 @@ public class RightHalf {
         rightHalf.printAlphabets(6);
     }
 
-    void printStars(int counter) {
+    @Override
+    public void printStars(int counter) {
         for (int i = 0; i < counter; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
@@ -30,7 +31,8 @@ public class RightHalf {
         }
     }
 
-    void printNumbers(int counter) {
+    @Override
+    public void printNumbers(int counter) {
         for (int i = 0; i < counter; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print((j + 1) + " ");
@@ -39,7 +41,8 @@ public class RightHalf {
         }
     }
 
-    void printAlphabets(int counter) {
+    @Override
+    public void printAlphabets(int counter) {
         for (int i = 0; i < counter; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print((char) (65 + j) + " ");
