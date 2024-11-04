@@ -34,15 +34,16 @@ public class Nov4 {
         int wordLength = wordArray.length;
         for (int i = 0; i < wordLength; i++) {
             int counter = 1;
-            while (i + 1 < wordLength && wordArray[i] == wordArray[i + 1]) {
+            char currentChar = wordArray[i];
+            while (i + 1 < wordLength && currentChar == wordArray[i + 1]) {
                 counter++;
                 i++;
             }
             while (counter > 9) {
-                response.append(9).append(wordArray[i]);
+                response.append(9).append(currentChar);
                 counter -= 9;
             }
-            response.append(counter).append(wordArray[i]);
+            response.append(counter).append(currentChar);
         }
         return response.toString();
     }
